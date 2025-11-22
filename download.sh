@@ -141,11 +141,11 @@ fi
 
 
 # If updating: backup existing config file
-if [ -f ${driver_path}/${driver_name_instance}/config.ini ]; then
-    echo ""
-    echo "Backing up existing config file..."
-    mv ${driver_path}/${driver_name_instance}/config.ini ${driver_path}/${driver_name_instance}_config.ini
-fi
+# if [ -f ${driver_path}/${driver_name_instance}/config.ini ]; then
+#     echo ""
+#     echo "Backing up existing config file..."
+#     mv ${driver_path}/${driver_name_instance}/config.ini ${driver_path}/${driver_name_instance}_config.ini
+# fi
 
 
 # If updating: cleanup existing driver
@@ -192,11 +192,11 @@ fi
 
 
 # If updating: restore existing config file
-if [ -f ${driver_path}/${driver_name_instance}_config.ini ]; then
-    echo ""
-    echo "Restoring existing config file..."
-    mv ${driver_path}/${driver_name_instance}_config.ini ${driver_path}/${driver_name_instance}/config.ini
-fi
+# if [ -f ${driver_path}/${driver_name_instance}_config.ini ]; then
+#     echo ""
+#     echo "Restoring existing config file..."
+#     mv ${driver_path}/${driver_name_instance}_config.ini ${driver_path}/${driver_name_instance}/config.ini
+# fi
 
 
 # set permissions for files
