@@ -24,3 +24,5 @@ v1.7
   add DbusSettingsList to add custom name setting for versions of venus os that do not have this field
 v1.8
   redirect logging to /var/log/auto_switch
+v1.9.3
+  create stand alone installation method
