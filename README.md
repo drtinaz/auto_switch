@@ -9,15 +9,9 @@ relay must have the custom name changed to "AC Water Heater" or "AC WH" in order
 On older versions of venus os the custom name cannot be changed from the gui. In this case you can open SSH terminal and
 use dbus-spy to change the custom name.
 
-The easiest method of installation is using Kevin Windrem's setup helper. 
-add this package to the packages list
-
-Package name: ACWH_Switch
-Tag or Branch: main
-Github User: drtinaz
-
-######## manual installation method without setuphelper #########
 open terminal and enter the following
 
+```
 wget -O /tmp/download.sh https://raw.githubusercontent.com/drtinaz/auto_switch/master/download.sh
 bash /tmp/download.sh
+```
