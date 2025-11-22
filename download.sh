@@ -165,8 +165,8 @@ cp -R /tmp/${driver_name}-master/ ${driver_path}/${driver_name_instance}/
 # remove temp files
 echo ""
 echo "Cleaning up temp files..."
-# rm -rf /tmp/${driver_name}.zip
-# rm -rf /tmp/${driver_name}-master
+rm -rf /tmp/${driver_name}.zip
+rm -rf /tmp/${driver_name}-master
 
 
 # check if driver_name is no equal to driver_name_instance
