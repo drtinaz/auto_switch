@@ -26,3 +26,5 @@ v1.8
   redirect logging to /var/log/auto_switch
 v1.9.3
   create stand alone installation method
+v1.9.4
+  fix restart script
