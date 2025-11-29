@@ -3,6 +3,7 @@
 import dbus
 import logging
 import os
+import sys
 from dbus.mainloop.glib import DBusGMainLoop
 from gi.repository import GLib
 
