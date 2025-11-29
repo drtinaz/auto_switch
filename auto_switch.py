@@ -3,10 +3,24 @@
 import dbus
 import logging
 import os
+import sys
 from dbus.mainloop.glib import DBusGMainLoop
 from gi.repository import GLib
 
-logging.basicConfig(level=logging.INFO)
+#logging.basicConfig(level=logging.INFO)
+
+logger = logging.getLogger()
+
+for handler in logger.handlers[:]:
+    logger.removeHandler(handler)
+
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+console_handler = logging.StreamHandler(sys.stdout)
+console_handler.setFormatter(formatter)
+
+logger.addHandler(console_handler)
+logger.setLevel(logging.INFO) # Default to DEBUG for better visibility
 
 # D-Bus service names and paths
 SETTINGS_SERVICE_NAME = "com.victronenergy.settings"
